@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				barber: {
+					dark: '#1A1205',
+					wood: '#2E1A0E',
+					gold: '#F0A500',
+					orange: '#E67E22',
+					light: '#F5F5F5',
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,29 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
+			},
+			backgroundImage: {
+				'wood-pattern': "url('/lovable-uploads/d6579bde-64f1-46b7-8a1e-9be8bb8199e1.png')",
+			},
+			fontFamily: {
+				tajawal: ['Tajawal', 'sans-serif'],
+				cairo: ['Cairo', 'sans-serif'],
 			}
 		}
 	},
