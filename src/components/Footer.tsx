@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, MapPin, Phone, Clock, SnapChat, MessageSquare } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Phone, Clock, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -74,7 +74,10 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 space-x-reverse hover:text-barber-gold transition-colors"
               >
-                <SnapChat className="text-barber-gold" size={20} />
+                {/* استبدلنا أيقونة SnapChat بأيقونة مخصصة SVG للسناب شات */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-barber-gold">
+                  <path d="M12 2c-2.8 0-5 2.2-5 5v3c0 .3-.1.6-.3.8L5 13a3 3 0 0 0 0 .5c0 1.9 1.8 2 3 2v.8c-1 .5-4 .5-4 2.7 0 1.8 4.4 3 8 3s8-1.2 8-3c0-2.2-3-2.2-4-2.7v-.8c1.2 0 3-.1 3-2 0-.2 0-.3-.1-.5L17 11c-.1-.2-.2-.5-.2-.8V7c0-2.8-2.2-5-5-5Z"></path>
+                </svg>
                 <span>elegantsudanese</span>
               </a>
               <a
